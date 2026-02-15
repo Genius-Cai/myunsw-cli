@@ -1,15 +1,6 @@
 <div align="center">
 
-# myunsw-cli
-
-<p>
-  <img src="https://img.shields.io/badge/MYUNSW-CLI-yellow?style=for-the-badge" alt="myunsw-cli" />
-  <img src="https://img.shields.io/badge/逆向工程-API-blueviolet?style=for-the-badge" alt="逆向工程 API" />
-</p>
-
-**逆向工程 myUNSW 学生门户，AI 辅助选课自动化**
-
-无爬虫。无密码。无浏览器自动化。仅需 Session Cookie + 已文档化的 API 端点。
+<img src="assets/logo.png" alt="myunsw-cli" width="280" />
 
 <p>
   <img src="https://img.shields.io/badge/端点-27个-blue" alt="27 个端点" />
@@ -18,6 +9,10 @@
   <img src="https://img.shields.io/badge/curl-073551?logo=curl&logoColor=white" alt="curl" />
   <img src="https://img.shields.io/badge/许可证-MIT-yellow" alt="MIT" />
 </p>
+
+**逆向工程 myUNSW 学生门户，AI 辅助选课自动化**
+
+无爬虫。无密码。无浏览器自动化。仅需 Session Cookie + 已文档化的 API 端点。
 
 [English](README.md) | 简体中文
 

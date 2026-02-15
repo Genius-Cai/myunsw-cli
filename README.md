@@ -1,15 +1,6 @@
 <div align="center">
 
-# myunsw-cli
-
-<p>
-  <img src="https://img.shields.io/badge/MYUNSW-CLI-yellow?style=for-the-badge" alt="myunsw-cli" />
-  <img src="https://img.shields.io/badge/REVERSE_ENGINEERED-API-blueviolet?style=for-the-badge" alt="Reverse Engineered API" />
-</p>
-
-**Reverse-engineered myUNSW API for AI-powered enrollment automation**
-
-No scraping. No passwords. No browser automation. Just documented endpoints + a session cookie.
+<img src="assets/logo.png" alt="myunsw-cli" width="280" />
 
 <p>
   <img src="https://img.shields.io/badge/Endpoints-27-blue" alt="27 Endpoints" />
@@ -18,6 +9,10 @@ No scraping. No passwords. No browser automation. Just documented endpoints + a 
   <img src="https://img.shields.io/badge/curl-073551?logo=curl&logoColor=white" alt="curl" />
   <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License" />
 </p>
+
+**Reverse-engineered myUNSW API for AI-powered enrollment automation**
+
+No scraping. No passwords. No browser automation. Just documented endpoints + a session cookie.
 
 English | [简体中文](README_CN.md)
 
