@@ -1,10 +1,29 @@
+<div align="center">
+
 # myunsw-cli
 
-> Reverse-engineered myUNSW API documentation & AI agent skill for UNSW enrollment automation.
+<p>
+  <img src="https://img.shields.io/badge/MYUNSW-CLI-yellow?style=for-the-badge" alt="myunsw-cli" />
+  <img src="https://img.shields.io/badge/REVERSE_ENGINEERED-API-blueviolet?style=for-the-badge" alt="Reverse Engineered API" />
+</p>
 
-**No scraping. No passwords. No browser automation.** Just documented API endpoints + a cookie from your browser session.
+**Reverse-engineered myUNSW API for AI-powered enrollment automation**
 
-[中文版](#中文)
+No scraping. No passwords. No browser automation. Just documented endpoints + a session cookie.
+
+<p>
+  <img src="https://img.shields.io/badge/Endpoints-27-blue" alt="27 Endpoints" />
+  <img src="https://img.shields.io/badge/Platforms-8+-green" alt="8+ Platforms" />
+  <img src="https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/curl-073551?logo=curl&logoColor=white" alt="curl" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow" alt="MIT License" />
+</p>
+
+English | [简体中文](README_CN.md)
+
+[Features](#tested-workflows) · [Quick Start](#quick-start) · [Architecture](#architecture) · [API Reference](docs/api-reference.md) · [Deployment](docs/deployment.md)
+
+</div>
 
 ---
 
@@ -18,7 +37,7 @@ This project reverse-engineers the portal and documents every endpoint, enabling
 - **CLI automation** — check grades, timetable, fees, waitlist positions from terminal
 - **Programmatic access** — hidden JSON APIs that return structured data
 
-### Tested Workflows
+## Tested Workflows
 
 | Workflow | Status | Notes |
 |----------|--------|-------|
@@ -248,30 +267,6 @@ UNSW Sydney — Bachelor of Commerce / Computer Science
 
 ---
 
-<a id="中文"></a>
-
-## 中文
-
-详细中文文档请查看 [README_CN.md](README_CN.md)
-
-### 简介
-
-逆向工程 UNSW 学生门户 myUNSW，文档化所有 API 端点。支持 AI 辅助选课、终端查成绩、JSON API 获取课表数据。
-
-### 支持平台
-
-| 平台 | 部署方式 |
-|------|---------|
-| Claude Code | `~/.claude/commands/myunsw.md` |
-| Codex CLI | 项目根目录 `AGENTS.md` |
-| Gemini CLI | 项目根目录 `GEMINI.md` |
-| OpenClawd | `~/.openclawd/skills/myunsw.md` |
-| Claude.ai | Project Knowledge 上传 |
-| Cursor | `.cursor/rules/myunsw.md` |
-| 原始 curl | 直接用 shell 脚本 |
-
-### 作者
-
-**蔡明哲 (Steven Cai)** — UNSW 商科/计算机 双学位
-
-欢迎贡献！请提交 Issue 或 PR。
+<div align="center">
+  <sub>Built by <a href="https://github.com/Genius-Cai">Steven Cai</a> | UNSW Sydney</sub>
+</div>

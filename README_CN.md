@@ -1,10 +1,29 @@
+<div align="center">
+
 # myunsw-cli
 
-> 逆向工程 UNSW 学生门户 myUNSW，文档化所有 API 端点，支持 AI 辅助选课自动化。
+<p>
+  <img src="https://img.shields.io/badge/MYUNSW-CLI-yellow?style=for-the-badge" alt="myunsw-cli" />
+  <img src="https://img.shields.io/badge/逆向工程-API-blueviolet?style=for-the-badge" alt="逆向工程 API" />
+</p>
 
-**无爬虫。无密码。无浏览器自动化。** 仅需浏览器 Cookie + 已文档化的 API 端点。
+**逆向工程 myUNSW 学生门户，AI 辅助选课自动化**
 
-[English Version](README.md)
+无爬虫。无密码。无浏览器自动化。仅需 Session Cookie + 已文档化的 API 端点。
+
+<p>
+  <img src="https://img.shields.io/badge/端点-27个-blue" alt="27 个端点" />
+  <img src="https://img.shields.io/badge/平台-8+-green" alt="8+ 平台" />
+  <img src="https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white" alt="Bash" />
+  <img src="https://img.shields.io/badge/curl-073551?logo=curl&logoColor=white" alt="curl" />
+  <img src="https://img.shields.io/badge/许可证-MIT-yellow" alt="MIT" />
+</p>
+
+[English](README.md) | 简体中文
+
+[功能](#已验证功能) · [快速开始](#快速开始) · [架构](#架构) · [API 文档](docs/api-reference.md) · [部署指南](docs/deployment.md)
+
+</div>
 
 ---
 
