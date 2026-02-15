@@ -49,21 +49,36 @@ This project reverse-engineers the portal and documents every endpoint, enabling
 
 ## Quick Start
 
-### 1. Get Your Session Cookie
+### 1. Install
 
-1. Log in to [myUNSW](https://my.unsw.edu.au) in your browser
-2. Open DevTools → Application → Cookies → `my.unsw.edu.au`
-3. Copy `JSESSIONID` (the one with path `/active`, **not** `/portal`)
-4. Also copy `AWSALB` and `AWSALBCORS`
+```bash
+git clone https://github.com/Genius-Cai/myunsw-cli.git
+cd myunsw-cli
+./install.sh    # auto-detects Claude Code / Codex / OpenClawd
+```
 
-### 2. Choose Your Platform
+### 2. Get Your Session Cookie
+
+Install [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc) (free Chrome extension), log in to [myUNSW](https://my.unsw.edu.au), navigate to any `/active/` page, export cookies, then:
+
+```bash
+mv ~/Downloads/cookies.txt /tmp/myunsw_active.txt
+```
+
+Or manually: see [deployment guide](docs/deployment.md) for DevTools method.
+
+### 3. Choose Your Platform
 
 <details>
 <summary><b>Claude Code</b> (recommended)</summary>
 
 ```bash
-# Install the skill
-cp skills/myunsw.md ~/.claude/commands/myunsw.md
+# Slash command
+cp commands/myunsw.md ~/.claude/commands/myunsw.md
+
+# Or as a skill (Agent Skills standard)
+mkdir -p ~/.claude/skills/myunsw-cli
+cp SKILL.md ~/.claude/skills/myunsw-cli/SKILL.md
 
 # Use it
 # /myunsw setup     ← paste your cookies
@@ -210,22 +225,28 @@ Pattern: T1→T2→T3 codes differ by 3. Year boundary adds ~4.
 
 ```
 myunsw-cli/
-├── README.md                    # This file
-├── README_CN.md                 # 中文文档
-├── LICENSE                      # MIT
-├── CONTRIBUTING.md              # How to contribute
+├── SKILL.md                     # Agent Skills standard entry point
+├── AGENTS.md                    # Codex CLI instructions
+├── .cursorrules                 # Cursor compatibility
+├── .claude-plugin/
+│   └── plugin.json              # Claude plugin marketplace metadata
+├── install.sh                   # One-line installer
+├── commands/
+│   └── myunsw.md                # Claude Code slash command (/myunsw)
+├── skills/
+│   ├── myunsw.md                # Full skill (Claude Code / OpenClawd)
+│   └── GEMINI.md                # Gemini CLI context
 ├── docs/
 │   ├── api-reference.md         # Complete API documentation
 │   ├── bsds-framework.md        # BSDS reverse engineering notes
-│   └── deployment.md            # Platform deployment guide
-├── skills/
-│   ├── myunsw.md                # Claude Code skill
-│   ├── AGENTS.md                # Codex CLI instructions
-│   └── GEMINI.md                # Gemini CLI context
-└── examples/
-    ├── check-grades.sh          # Fetch all grades
-    ├── check-timetable.sh       # Get timetable JSON
-    └── search-classes.sh        # Search for classes
+│   ├── deployment.md            # Platform deployment guide
+│   └── deployment_cn.md         # 部署指南（中文）
+├── examples/
+│   ├── check-grades.sh          # Fetch all grades
+│   ├── check-timetable.sh       # Get timetable JSON
+│   └── search-classes.sh        # Search for classes
+└── assets/
+    └── logo.png                 # Project logo
 ```
 
 ## Limitations

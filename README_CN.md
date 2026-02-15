@@ -16,7 +16,7 @@
 
 [English](README.md) | 简体中文
 
-[功能](#已验证功能) · [快速开始](#快速开始) · [架构](#架构) · [API 文档](docs/api-reference.md) · [部署指南](docs/deployment.md)
+[功能](#已验证功能) · [快速开始](#快速开始) · [架构](#架构) · [API 文档](docs/api-reference.md) · [部署指南](docs/deployment_cn.md)
 
 </div>
 
@@ -105,7 +105,7 @@ curl -s -b /tmp/myunsw_active.txt \
 | **Aider** | `aider --read skills/myunsw.md` | 作为上下文加载 |
 | **原始 curl** | 无需安装 | 参考 `examples/` 目录 |
 
-详细部署说明见 [docs/deployment.md](docs/deployment.md)。
+详细部署说明见 [部署指南](docs/deployment_cn.md)。
 
 ## 架构
 
@@ -165,7 +165,8 @@ myunsw-cli/
 ├── docs/
 │   ├── api-reference.md         # 完整 API 文档
 │   ├── bsds-framework.md        # BSDS 框架逆向笔记
-│   └── deployment.md            # 各平台部署指南
+│   ├── deployment.md            # 各平台部署指南（英文）
+│   └── deployment_cn.md         # 各平台部署指南（中文）
 ├── skills/
 │   ├── myunsw.md                # Claude Code 技能
 │   ├── AGENTS.md                # Codex CLI 指令

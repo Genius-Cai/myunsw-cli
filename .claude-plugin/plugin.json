@@ -1,0 +1,14 @@
+{
+  "name": "myunsw-cli",
+  "version": "1.0.0",
+  "description": "Reverse-engineered myUNSW API for AI-powered enrollment automation. 27 endpoints for grades, timetable, fees, class search, and personal info.",
+  "author": {
+    "name": "Steven Cai",
+    "url": "https://github.com/Genius-Cai"
+  },
+  "repository": "https://github.com/Genius-Cai/myunsw-cli",
+  "license": "MIT",
+  "keywords": ["unsw", "enrollment", "university", "grades", "timetable", "myunsw", "education"],
+  "skills": ["skills/myunsw"],
+  "commands": ["commands/myunsw"]
+}

@@ -1,0 +1,9 @@
+You have access to the myUNSW student portal API documentation.
+When the user asks about UNSW enrollment, grades, timetable, fees, or personal info,
+use curl with the cookie file at /tmp/myunsw_active.txt to interact with myUNSW.
+
+See docs/api-reference.md for complete endpoint documentation.
+See SKILL.md for the core automation pattern (BSDS framework).
+
+Key pattern: GET page → extract bsdsSequence → POST with bsdsSequence + bsdsSubmit-{action} → follow 302.
+Cookie file must contain JSESSIONID (path=/active), AWSALB, AWSALBCORS.
